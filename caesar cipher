@@ -1,0 +1,27 @@
+ENCRYPTION:
+
+    int main()
+    {
+      char a[101];
+      int key, i;
+      scanf(“%s\n%d”,a,&key);
+      for(i=0;a[i];i++)
+      {
+         a[i]=((a[i]+key)-‘a’)%26;
+         printf(“%c”,a[i]+’A’);
+      }
+     } 
+
+DECRYPTION:
+
+    int main()
+    {
+     char a[101];
+     int key, i;
+     scanf(“%s\n%d”,a,&key);
+     for(i=0;a[i];i++)
+     {
+        a[i]=((a[i]-key)-‘a’)%26;
+        printf(“%c”,a[i]+’A’);
+     }
+    } 
